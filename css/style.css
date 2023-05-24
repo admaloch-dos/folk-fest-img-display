@@ -113,7 +113,9 @@ opacity: 1;
 }
 
 
-
+#carousel-example-generic .carousel-item {
+  transition: all 1.5s ease-in-out;
+}
 
 
 .carousel {
@@ -124,9 +126,16 @@ opacity: 1;
   align-items: center;
 }
 
-img {
+.carousel-inner {
+   height: 70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
-  min-height: 70vh;
+img {
+min-height: 70vh;
+
 }
 
 

@@ -7,7 +7,8 @@ $('.carousel').carousel({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 1500,
+
+  interval: 7000,
   mobileFirst: true
 });
 
@@ -38,6 +39,7 @@ for (let i = 0; i < images.length - 1; i++) {
   const newItem = document.createElement('div')
   newItem.id = randIndex
   newItem.classList.add('carousel-item')
+
   let newImg = document.createElement('img')
   newImg.src = `img/image${randImage}.jpg`
   newImg.classList.add('d-block', 'mx-auto')
