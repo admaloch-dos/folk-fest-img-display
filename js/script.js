@@ -43,10 +43,7 @@ for (let i = 0; i < images.length - 1; i++) {
   newItem.classList.add('carousel-item')
   newItem.innerHTML = `
 
-    <div class="item-info">
-      <h3 class="item-description">${data[i].description}</h3>
-      <h4 class="item-year">${data[i].year}</h4>
-    </div>
+    
     <img src="img/image${randImage}.jpg" class="d-block mx-auto">
 
   `
