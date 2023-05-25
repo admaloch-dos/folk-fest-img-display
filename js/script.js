@@ -1,16 +1,18 @@
+
 const images = ["001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058", "059", "060", "061", "062", "063", "064", "065", "066", "067", "068", "069", "070", "071", "072", "073", "074", "075", "076", "077"]
+
+// add array of song titles
+//titles must be identical to file names from music directory
+const songs = ["1. What is Folklife", "2. Black Mountain Rag", "3. Alma Corazon Y Vida", "4. Shove it Over", "5. Orange Blossom Special", "6. Old County Church", "7. Somethings Got a Hold of Me", "8. Welcome to Rainbow Springs", "9. La Viya", "10. Understanding Folklife", "11. Camilia La Tejana", "12. Arkansas Traveler", "13. That Old Time Religion", "14. Just Got Married", "15. Sissy In the Barn", "16. Alligator Dance", "17. I'm Going to Die With the Staff in My Hand", "18. El Gavilan Cjaropo", "19. That's Alright", "20. Which Way Did My Baby Go", "21. Where Could I Go But To The Lord", "22. Devil's Dream", "23. Give a Poor Dog a Bone", "24. Somewhere to Lay My Head", "25. I believe", "26. Butter Beans", "27. Chu Shui Lian", "28. The Cuckoo", "29. One Dime Blues", "30. Qua Cãu Gió Bay", "31. The Water is Wide", "32. Kimble's Rachel", "33. Gonna Paint the Town", "34. Kind Hearted Woman Blues", "35. The Cruel Weather", "36. Back in the Saddle Again", "37. Lord Wellington's Reel", "38. Nottamun Town", "39. Until I Found the Lord", "40. The Wayfaring Stranger"]
 
 $('.carousel').carousel({
 
+  interval: 8000,
 
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-
-  interval: 7000,
-  mobileFirst: true
 });
+
+
+
 
 // function to generate random number that doesn't repeat
 let nums = [];
@@ -39,11 +41,16 @@ for (let i = 0; i < images.length - 1; i++) {
   const newItem = document.createElement('div')
   newItem.id = randIndex
   newItem.classList.add('carousel-item')
+  newItem.innerHTML = `
 
-  let newImg = document.createElement('img')
-  newImg.src = `img/image${randImage}.jpg`
-  newImg.classList.add('d-block', 'mx-auto')
-  newItem.append(newImg)
+    <div class="item-info">
+      <h3 class="item-description">${data[i].description}</h3>
+      <h4 class="item-year">${data[i].year}</h4>
+    </div>
+    <img src="img/image${randImage}.jpg" class="d-block mx-auto">
+
+  `
+
   carouselInner.append(newItem)
 }
 const firstItem = document.querySelector('.carousel-item').classList.add('active')
@@ -51,7 +58,7 @@ const firstItem = document.querySelector('.carousel-item').classList.add('active
 
 
 
-
+// music player code
 const musicContainer = document.getElementById('music-container');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
@@ -65,8 +72,6 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
-// Song titles
-const songs = ['01 Vive y Vacila', '02 Agua Que Va Caer', '03 Ochosí', '04 Manteca', '05 Drum Instrumental', '06 Bomba Demonstration', '07 Eleguá (El Niño de Atocha)', '08 Guantanamera', '09 Yo Canto en el Llano', '10 Yo Llegaré', '11 Afro-Samba', '12 Pasaje', '13 Alma, Corazón y Vida', '14 El Cóndor Pasa', '15 Embrujo', '16 Guadalajara', '17 Una Morenita', '18 Vuela Paloma', '19 Tomando Licores', '20 Cielito Lindo'];
 
 // Keep track of song
 let songIndex = 0;
@@ -170,8 +175,8 @@ function DurTime(e) {
 
   get_sec(currentTime, sec);
 
-  // change currentTime DOM
-  currTime.innerHTML = min + ':' + sec;
+  // // change currentTime DOM
+  // currTime.innerHTML = min + ':' + sec;
 
   // define minutes duration
   let min_d = (isNaN(duration) === true) ? '0' :
@@ -200,7 +205,7 @@ function DurTime(e) {
   get_sec_d(duration);
 
   // change duration DOM
-  durTime.innerHTML = min_d + ':' + sec_d;
+  // durTime.innerHTML = min_d + ':' + sec_d;
 
 };
 
@@ -234,3 +239,4 @@ audio.addEventListener('timeupdate', DurTime);
 const audioTracks = document.querySelector('#audio')
 
 
+console.log(data[0])
