@@ -1,49 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css">k
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <!-- <link rel="stylesheet" href="/files/font-awesome/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="files/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css" />
-  <title>Music Player</title>
+  <script src="./files/qrcode.min.js"></script>
+  <title>Folklife Audio Player</title>
 </head>
 
 <body>
-
-
   <div class="container-fluid">
-    <!-- <div class="photo-info-container">
-      <div class="photo-info-wrapper">
-        <h3>This is the description</h3>
-        <h4>1945</h4>
-      </div>
-
-    </div> -->
     <div class="img-container">
-
-
-      <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-
-
-
+      <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel " data-bs-interval="10000">
+        <div class="carousel-inner">
         </div>
-      </div> <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="icon-prev" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="icon-next" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
     </div>
     <div class="content-container">
       <div class="music-player" id="music-container">
-        <div class="music-info">
+        <div class="music-info text-center">
           <h4 id="title"></h4>
           <div class="progress-container" id="progress-container">
             <div class="progress" id="progress"></div>
@@ -55,37 +46,34 @@
 
         <div class="navigation">
           <button id="prev" class="action-btn">
-            <i class="fas fa-backward"></i>
+            <i class="fa fa-fw fa-backward" aria-hidden="true"></i>
           </button>
           <button id="play" class="action-btn action-btn-big">
-            <i class="fas fa-play"></i>
+            <i class="fa fa-play"></i>
           </button>
           <button id="next" class="action-btn">
-            <i class="fas fa-forward"></i>
+            <i class="fa fa-forward"></i>
           </button>
         </div>
+      </div>
+      <div class="qr-container d-flex justify-content-center flex-column align-items-center">
+        <p class="mb-3">Scan to learn more about this image</p>
+        <div id="qrcode"></div>
       </div>
     </div>
   </div>
 
 
+  <script src="./files/jquery-3.7.0.js"></script>
 
-  <div id="17" class="carousel-item">
-    <div class="item-info">
-      <h3 class="item-description"></h3>
-      <h4 class="item-year"></h4>
-    </div>
-    <img src="img/image018.jpg" class="d-block mx-auto">
-  </div>
-
-
-  <script src="./js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <!-- <script src="/files/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/img-array.js"></script>
   <script src="./js/data.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/music-player.js"></script>
+  <script src="./js/image-slider.js"></script>
+  <script src="./js/qr-functions.js"></script>
+  <script>$('body').fadeIn(5000); </script>
 </body>
 
 </html>
