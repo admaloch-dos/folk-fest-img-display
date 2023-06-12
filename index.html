@@ -1,23 +1,84 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!-- <html class="no-js" lang="en"> -->
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-  <!-- <link rel="stylesheet" href="/files/font-awesome/css/all.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script> -->
+  <link rel="stylesheet" href="./files/font-awesome/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="files/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="./files/qrcode.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css\image-slider.css" />
+  <link rel="stylesheet" href="css/music-player.css" />
+  <link rel="stylesheet" href="css/qr-code.css" />
+
+
+
   <title>Folklife Audio Player</title>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="img-container">
-      <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel " data-bs-interval="10000">
+  <div id="main-container" class="container-fluid d-flex flex-column align-items-center">
+    <!-- modal -->
+    <!-- Button trigger modal -->
+    <div class="header-container d-none d-sm-flex justify-content-between ">
+      <div id="full-screen" class=" full-screen d-flex align-items-center ">
+        <i class="fas fa-expand"></i>
+      </div>
+      <button id="modal-btn" type="button" class="btn btn-dark text-right" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sizing">
+        <div class="modal-content text-center">
+          <!-- <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
+          <div class="modal-body">
+            <h2>Settings:</h2>
+            <h3>Slideshow speed:</h3>
+            <input type="radio" class="btn-check slider-speed-input" name="slider-speed" id="speed1" autocomplete="off">
+            <label id="speed-btn-vs" class="btn btn-light btn-outline-dark slider-speed-btns modal-btns"
+              for="speed1">Very Slow</label>
+            <input type="radio" class="btn-check slider-speed-input" name="slider-speed" id="speed2" autocomplete="off">
+            <label id="speed-btn-s" class="btn btn-light btn-outline-dark slider-speed-btns modal-btns"
+              for="speed2">Slow</label>
+            <input type="radio" class="btn-check slider-speed-input" name="slider-speed" id="speed3" autocomplete="off"
+              checked>
+            <label id="speed-btn-m" class="btn btn-light btn-outline-dark slider-speed-btns modal-btns"
+              for="speed3">Medium</label>
+            <input type="radio" class="btn-check slider-speed-input" name="slider-speed" id="speed4" autocomplete="off">
+            <label id="speed-btn-f" class="btn btn-light btn-outline-dark slider-speed-btns modal-btns"
+              for="speed4">Fast</label>
+            <h3 class="mt-3">Slideshow style:</h3>
+            <input type="radio" class="btn-check slider-style-input" name="slider-style" id="style1" autocomplete="off"
+              checked>
+            <label class="btn btn-light btn-outline-dark slider-style-btns modal-btns" for="style1">Slider</label>
+            <input type="radio" class="btn-check slider-style-input" name="slider-style" id="style2" autocomplete="off">
+            <label class="btn btn-light btn-outline-dark slider-style-btns modal-btns" for="style2">Fade</label>
+          </div>
+          <div class="modal-footer d-flex justify-content-center mb-0">
+            <button id="modal-close" type="button" class="btn btn-light btn-outline-dark"
+              data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div id="img-container" class="img-container">
+      <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-inner">
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -32,7 +93,9 @@
         </button>
       </div>
     </div>
-    <div class="content-container">
+    <!-- music player -->
+    <div
+      class="footer-content d-flex flex-column flex-md-row justify-content-between justify-content-lg-between align-items-center">
       <div class="music-player" id="music-container">
         <div class="music-info text-center">
           <h4 id="title"></h4>
@@ -40,10 +103,7 @@
             <div class="progress" id="progress"></div>
           </div>
         </div>
-
         <audio src="" id="audio"></audio>
-
-
         <div class="navigation">
           <button id="prev" class="action-btn">
             <i class="fa fa-fw fa-backward" aria-hidden="true"></i>
@@ -56,24 +116,39 @@
           </button>
         </div>
       </div>
-      <div class="qr-container d-flex justify-content-center flex-column align-items-center">
-        <p class="mb-3">Scan to learn more about this image</p>
-        <div id="qrcode"></div>
+      <div class="qr-container  d-none d-md-flex justify-content-center align-items-center  flex-lg-column">
+        <p class="mb-0 d-none d-md-block text-center">Scan to learn more at Florida Memory</p>
+        <div class="group d-none">
+          <div id="qr"></div>
+          <div id="image"><img src=""></div>
+        </div>
+        <div class="group">
+          <div id="combine"></div>
+        </div>
+      </div>
+      <div class="mobile-info-container  d-md-none d-flex justify-content-center align-items-center">
+        <a id="mobile-info-link" href="">Visit item page to learn more</a>
       </div>
     </div>
   </div>
 
-
+  <!-- <script src="./files/qrcode.min.js"></script> -->
+  <script src="./files/qrcode.js"></script>
+  <script src="./files/qart.js"></script>
   <script src="./files/jquery-3.7.0.js"></script>
+  <script src="./files/bootstrap.bundle.min.js"></script>
+  <script src="./files/jquery.awesome-cursor.min.js"></script>
+  <script src="./js/script.js"></script>
 
-  <!-- <script src="/files/bootstrap.bundle.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/img-array.js"></script>
   <script src="./js/data.js"></script>
+  <script src="./js/modal.js"></script>
   <script src="./js/music-player.js"></script>
   <script src="./js/image-slider.js"></script>
   <script src="./js/qr-functions.js"></script>
-  <script>$('body').fadeIn(5000); </script>
+  <!-- <script>$('body').fadeIn(2000); </script> -->
+  <script src="./js/fullscreen.js"></script>
+
+
 </body>
 
 </html>

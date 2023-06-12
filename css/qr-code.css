@@ -1,0 +1,85 @@
+/* qrcode  */
+.qr-container {
+    max-width: 200px;
+
+}
+
+
+
+.qr-container p {
+    font-size: 1rem;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+
+
+/* mobile info link */
+.mobile-info-container {
+    width: 100%;
+    height: 100px;
+}
+
+#mobile-info-link {
+
+    color: #ffffff;
+    text-decoration: none;
+    border: #ffffff solid 2px;
+    padding: 1em;
+    font-size: .7rem;
+
+}
+@media (min-width: 600px) {
+    #mobile-info-link {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .qr-container {
+        margin-left: 0;
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
+}
+
+/* @media (min-width: 992px) {
+    .qr-container {
+
+        margin-top: 0px;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .qr-container {
+        margin-left: 0;
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .qr-container p {
+        font-size: 1.2rem;
+        line-height: 20px;
+
+    }
+}
+
+
+@media (min-width: 2250px) {
+    .qr-container {
+        margin-left: 0;
+        position: absolute;
+        bottom: 0px;
+        right: 70px;
+    }
+    .qr-container p {
+        font-size: 1.4rem;
+
+    }
+} */

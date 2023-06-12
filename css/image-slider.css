@@ -1,0 +1,233 @@
+/* image slider */
+.img-container {
+
+  width: 100%;
+  z-index: 100;
+}
+
+
+
+
+
+.carousel-inner {
+  height: 100%;
+
+}
+
+.item-info {
+  color: white;
+  text-align: center;
+
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 1em;
+
+}
+
+.item-info h3,
+.item-info h4 {
+  font-size: .7rem;
+}
+
+
+
+.carousel-item {
+  height: 100%;
+
+}
+
+.carousel-item img {
+  height: 50vh;
+  min-height: 50vh;
+  box-shadow: 0px 0px 20px 15px rgba(255, 255, 255, 0.05);
+  z-index: 100;
+}
+
+
+
+/* p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+
+  } */
+
+/* carousel controls full screen */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 2vw;
+  height: 2vw;
+  opacity: .3;
+  transition: all .3s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  transition: all .1s ease-in-out;
+  font-size: 50px;
+
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.21);
+  cursor: pointer;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  opacity: .8;
+}
+
+.carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+
+*/ .carousel-item {
+  transition: transform 3s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start {
+  transition: opacity 0s 0s;
+}
+
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2s;
+}
+
+@media (min-width: 280px) {
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 360px) {
+  .item-info {
+    height: 9em;
+  }
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 540px) {
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 1.4rem;
+  }
+
+  .item-info {
+    height: 8em;
+  }
+
+  .carousel-item img {
+    height: 56vh;
+
+  }
+  .img-container {
+
+
+    z-index: 0;
+  }
+}
+
+@media (min-width: 820px) {
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 1.7rem;
+  }
+
+  .carousel-item img {
+    height: 60vh;
+
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-item img {
+    height: 63vh;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-container {
+    height: 100%;
+  }
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 2rem;
+  }
+
+  .carousel-item img {
+    height: 65vh;
+
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .item-info {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 2rem;
+  }
+
+  .carousel-item img {
+    height: 65vh;
+
+  }
+}
+
+@media (min-width: 1714px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 2000px) {
+
+
+  .carousel-item img {
+    height: 75vh;
+
+  }
+
+  .item-info h3,
+  .item-info h4 {
+    font-size: 2.1rem;
+  }
+}

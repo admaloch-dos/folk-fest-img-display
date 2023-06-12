@@ -846,7 +846,7 @@ const images = [
     "file": "FA3496",
     "Florida Folk Festival": 63,
     "description": "Bluegrass fiddler \"Chubby\" Anthony and band performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109388,
@@ -867,28 +867,28 @@ const images = [
     "file": "FA3502",
     "Florida Folk Festival": 37,
     "description": "The Sawgrass Boys performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109391,
     "file": "FA3503",
     "Florida Folk Festival": 37,
     "description": "The Sawgrass Boys performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109392,
     "file": "FA3504",
     "Florida Folk Festival": 37,
     "description": "The Sawgrass Boys performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109393,
     "file": "FA3505",
     "Florida Folk Festival": 37,
     "description": "The Sawgrass Boys performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109395,
@@ -916,14 +916,14 @@ const images = [
     "file": "FA3510",
     "Florida Folk Festival": 55,
     "description": "Coolidge (Ga.) Elementary School group singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109399,
     "file": "FA3511",
     "Florida Folk Festival": 47,
     "description": "Trenton (Florida) School group singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109400,
@@ -944,42 +944,42 @@ const images = [
     "file": "FA3514",
     "Florida Folk Festival": 81,
     "description": "Byzantine Choir from the Greek Orthodox Church of Tarpon Springs singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109403,
     "file": "FA3515",
     "Florida Folk Festival": 68,
     "description": "New Stanton High School Chorus from Jacksonville performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109404,
     "file": "FA3516",
     "Florida Folk Festival": 59,
     "description": "Carver School chorus from White Springs performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109405,
     "file": "FA3517",
     "Florida Folk Festival": 78,
     "description": "Dixie Hollins High School Folk Singers from St. Petersburg performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109406,
     "file": "FA3518",
     "Florida Folk Festival": 64,
     "description": "McCrabbe Church Gospel Singers of Cross City performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109407,
     "file": "FA3519",
     "Florida Folk Festival": 49,
     "description": "Vocal group singing barbershop harmonies at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109408,
@@ -1007,21 +1007,21 @@ const images = [
     "file": "FA3523",
     "Florida Folk Festival": 78,
     "description": "Minnie J. Niblack Elementary School Singers from Lake City performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109412,
     "file": "FA3524",
     "Florida Folk Festival": 59,
     "description": "Highlands Elementary School Boys Chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109413,
     "file": "FA3525",
     "Florida Folk Festival": 70,
     "description": "Littlewood Elementary School Chorus of Gainesville performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109414,
@@ -1035,112 +1035,112 @@ const images = [
     "file": "FA3527",
     "Florida Folk Festival": 39,
     "description": "Conductor leading church choir at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109416,
     "file": "FA3528",
     "Florida Folk Festival": 26,
     "description": "Children's chorus at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109417,
     "file": "FA3529",
     "Florida Folk Festival": 22,
     "description": "Girls singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109418,
     "file": "FA3530",
     "Florida Folk Festival": 26,
     "description": "Children's chorus at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109419,
     "file": "FA3531",
     "Florida Folk Festival": 35,
     "description": "Children playing recorders at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109420,
     "file": "FA3532",
     "Florida Folk Festival": 44,
     "description": "Elementary school chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109421,
     "file": "FA3533",
     "Florida Folk Festival": 38,
     "description": "High school chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109422,
     "file": "FA3534",
     "Florida Folk Festival": 47,
     "description": "School chorus and orchestra performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109426,
     "file": "FA3537",
     "Florida Folk Festival": 37,
     "description": "Children's chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109427,
     "file": "FA3538",
     "Florida Folk Festival": 33,
     "description": "Singing group performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109428,
     "file": "FA3539",
     "Florida Folk Festival": 37,
     "description": "Children's chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109429,
     "file": "FA3540",
     "Florida Folk Festival": 38,
     "description": "High school chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109430,
     "file": "FA3541",
     "Florida Folk Festival": 38,
     "description": "High school chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109431,
     "file": "FA3542",
     "Florida Folk Festival": 32,
     "description": "Youth chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109432,
     "file": "FA3543",
     "Florida Folk Festival": 37,
     "description": "Young men's choir performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109433,
     "file": "FA3544",
     "Florida Folk Festival": 32,
     "description": "Youth chorus performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109434,
@@ -1273,42 +1273,42 @@ const images = [
     "file": "FA3572",
     "Florida Folk Festival": 31,
     "description": "Quilting demonstration at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109462,
     "file": "FA3573",
     "Florida Folk Festival": 31,
     "description": "Quilting demonstration at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109463,
     "file": "FA3574",
     "Florida Folk Festival": 31,
     "description": "Quilting demonstration at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109464,
     "file": "FA3575",
     "Florida Folk Festival": 31,
     "description": "Quilting demonstration at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109466,
     "file": "FA3576",
     "Florida Folk Festival": 42,
     "description": "Quilting demonstration with music at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109467,
     "file": "FA3577",
     "Florida Folk Festival": 43,
     "description": "Quilting and weaving demonstration at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109469,
@@ -1329,7 +1329,7 @@ const images = [
     "file": "FA3582",
     "Florida Folk Festival": 33,
     "description": "Park ranger carving wood at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109473,
@@ -1350,21 +1350,21 @@ const images = [
     "file": "FA3584",
     "Florida Folk Festival": 39,
     "description": "Man demonstrating wood turning at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109476,
     "file": "FA3585",
     "Florida Folk Festival": 34,
     "description": "Man carving wood figurine at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109477,
     "file": "FA3586",
     "Florida Folk Festival": 22,
     "description": "Man whittling at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109478,
@@ -1392,7 +1392,7 @@ const images = [
     "file": "FA3591",
     "Florida Folk Festival": 34,
     "description": "Beseda dancers performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109483,
@@ -1434,7 +1434,7 @@ const images = [
     "file": "FA3600",
     "Florida Folk Festival": 54,
     "description": "Beseda Club of Masaryktown dancers performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109491,
@@ -1483,7 +1483,7 @@ const images = [
     "file": "FA3619A",
     "Florida Folk Festival": 34,
     "description": "Cambodian American dancer at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109513,
@@ -1518,28 +1518,28 @@ const images = [
     "file": "FA3623A",
     "Florida Folk Festival": 25,
     "description": "Cloggers dancing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109522,
     "file": "FA3624A",
     "Florida Folk Festival": 25,
     "description": "Cloggers dancing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109524,
     "file": "FA3625A",
     "Florida Folk Festival": 25,
     "description": "Cloggers dancing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109526,
     "file": "FA3626A",
     "Florida Folk Festival": 28,
     "description": "Cloggers performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109528,
@@ -1693,7 +1693,7 @@ const images = [
     "file": "FA3643",
     "Florida Folk Festival": 39,
     "description": "Sacred Harp singers performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109558,
@@ -1735,7 +1735,7 @@ const images = [
     "file": "FA3647",
     "Florida Folk Festival": 35,
     "description": "Israeli dancers performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109565,
@@ -1805,28 +1805,28 @@ const images = [
     "file": "FA3654",
     "Florida Folk Festival": 26,
     "description": "Singer performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109576,
     "file": "FA3655",
     "Florida Folk Festival": 27,
     "description": "Singers performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109577,
     "file": "FA3656",
     "Florida Folk Festival": 24,
     "description": "Couples dancing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109578,
     "file": "FA3657",
     "Florida Folk Festival": 27,
     "description": "Singers performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109580,
@@ -1840,14 +1840,14 @@ const images = [
     "file": "FA3659",
     "Florida Folk Festival": 29,
     "description": "Church choir singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109582,
     "file": "FA3659A",
     "Florida Folk Festival": 30,
     "description": "Children clog dancing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109583,
@@ -1861,7 +1861,7 @@ const images = [
     "file": "FA3661",
     "Florida Folk Festival": 22,
     "description": "Girls dancing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109587,
@@ -1882,21 +1882,21 @@ const images = [
     "file": "FA3665",
     "Florida Folk Festival": 23,
     "description": "Festival goers at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109595,
     "file": "FA3666",
     "Florida Folk Festival": 22,
     "description": "Choir singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109597,
     "file": "FA3667",
     "Florida Folk Festival": 35,
     "description": "High school chorus singing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109599,
@@ -1910,7 +1910,7 @@ const images = [
     "file": "FA3669",
     "Florida Folk Festival": 34,
     "description": "High school group singing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109603,
@@ -1924,14 +1924,14 @@ const images = [
     "file": "FA3672",
     "Florida Folk Festival": 35,
     "description": "Mexican dancers performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109608,
     "file": "FA3673",
     "Florida Folk Festival": 35,
     "description": "Mexican dancers performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109610,
@@ -1952,21 +1952,21 @@ const images = [
     "file": "FA3677",
     "Florida Folk Festival": 37,
     "description": "Children winding the maypole at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109618,
     "file": "FA3678",
     "Florida Folk Festival": 37,
     "description": "Children winding the maypole at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109620,
     "file": "FA3679",
     "Florida Folk Festival": 37,
     "description": "Children winding the maypole at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109621,
@@ -2302,7 +2302,7 @@ const images = [
     "file": "FA3775",
     "Florida Folk Festival": 51,
     "description": "The Daves Brothers Band of West Palm Beach at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109708,
@@ -2344,21 +2344,21 @@ const images = [
     "file": "FA3782",
     "Florida Folk Festival": 33,
     "description": "Singing group performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109715,
     "file": "FA3783",
     "Florida Folk Festival": 29,
     "description": "The Pine Valley Boys at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109716,
     "file": "FA3784",
     "Florida Folk Festival": 29,
     "description": "The Pine Valley Boys at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109717,
@@ -2379,42 +2379,42 @@ const images = [
     "file": "FA3790",
     "Florida Folk Festival": 32,
     "description": "Girls playing jump rope at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109723,
     "file": "FA3791",
     "Florida Folk Festival": 71,
     "description": "Sixth graders of Jacksonville's Forest Hills School performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109724,
     "file": "FA3792",
     "Florida Folk Festival": 43,
     "description": "Teenage girls playing Cat's cradle at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109725,
     "file": "FA3793",
     "Florida Folk Festival": 79,
     "description": "Coolidge Elementary School Dancers, from Coolidge, Georgia, performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109726,
     "file": "FA3794",
     "Florida Folk Festival": 79,
     "description": "Coolidge Elementary School Dancers, from Coolidge, Georgia, performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109727,
     "file": "FA3795",
     "Florida Folk Festival": 32,
     "description": "Girls playing jump rope at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109729,
@@ -2505,7 +2505,7 @@ const images = [
     "file": "FA3819",
     "Florida Folk Festival": 33,
     "description": "Musical group performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109752,
@@ -2617,7 +2617,7 @@ const images = [
     "file": "FA3844",
     "Florida Folk Festival": 39,
     "description": "Aubrey Dunscombe playing a saw at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109775,
@@ -2736,7 +2736,7 @@ const images = [
     "file": "FA3887",
     "Florida Folk Festival": 34,
     "description": "Gospel singers performing at the Florida Folk Festival- White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109812,
@@ -3037,14 +3037,14 @@ const images = [
     "file": "FA3960",
     "Florida Folk Festival": 36,
     "description": "The Boyer family performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109880,
     "file": "FA3961",
     "Florida Folk Festival": 47,
     "description": "Susan Boyer Haley playing the psaltery at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109881,
@@ -3065,7 +3065,7 @@ const images = [
     "file": "FA3964",
     "Florida Folk Festival": 37,
     "description": "Susan Boyer Haley performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109884,
@@ -3093,7 +3093,7 @@ const images = [
     "file": "FA3968",
     "Florida Folk Festival": 38,
     "description": "Indonesian singers performing at the Florida Folk Festival - White Springs, Florida",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109888,
@@ -3289,7 +3289,7 @@ const images = [
     "file": "FA4001",
     "Florida Folk Festival": 35,
     "description": "Will McLean of Tallahassee at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109921,
@@ -3317,7 +3317,7 @@ const images = [
     "file": "FA4009",
     "Florida Folk Festival": 47,
     "description": "Colonel and Mrs. Jacob Moon performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109929,
@@ -3366,7 +3366,7 @@ const images = [
     "file": "FA4021",
     "Florida Folk Festival": 67,
     "description": "Barbara Muller of Lake Mary and Dan Tillinghast performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109940,
@@ -3408,14 +3408,14 @@ const images = [
     "file": "FA4028",
     "Florida Folk Festival": 48,
     "description": "Larry Older of Lake Hamilton performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109947,
     "file": "FA4029",
     "Florida Folk Festival": 59,
     "description": "Larry and Martha Older of Lake Hamilton performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109949,
@@ -3429,14 +3429,14 @@ const images = [
     "file": "FA4033",
     "Florida Folk Festival": 44,
     "description": "Folk musician Bob Pavitt performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109952,
     "file": "FA4034",
     "Florida Folk Festival": 44,
     "description": "Folk musician Bob Pavitt performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109953,
@@ -3457,7 +3457,7 @@ const images = [
     "file": "FA4038",
     "Florida Folk Festival": 33,
     "description": "Polish dancer performing at the Florida Folk Festival - White Springs, Florida.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 109960,
@@ -7979,14 +7979,14 @@ const images = [
     "file": "FS96008",
     "Florida Folk Festival": 73,
     "description": "Margaret Garrison, from Jacksonville, making a sweetgrass basket at the Florida Folk Festival in White Springs.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 319055,
     "file": "FS96009",
     "Florida Folk Festival": 71,
     "description": "Margaret Garrison, from Jacksonville, with her sweetgrass coil at the Florida Folk Festival in White Springs.",
-    "year": "1900 (circa)"
+    "year": ""
   },
   {
     "id": 319029,
