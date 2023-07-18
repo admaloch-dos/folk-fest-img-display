@@ -1,85 +1,89 @@
-const testScreenSize = () => {
-  let size = 250
-  if (window.innerWidth > 2250) {
-    size = 300
-  } else {
-    size = 250
-  }
-  return size
+// -------------gen default qr code----------------------------
+// function to update qr code
+function makeDefaultQr(id) {
+  const defaultQrSize = qrsize - 35
+
+  $("#qr-code").html("");
+  var qrcode = new QRCode("qr-code", {
+    text: `https://www.floridamemory.com/items/show/${id}`,
+    width: defaultQrSize,
+    height: defaultQrSize,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
 }
 
-function makeQR(value) {
-  var version = 10;
-  qrcode.qrcode.stringToBytes = qrcode.qrcode.stringToBytesFuncs['UTF-8']
-  var qr = qrcode.qrcode(version, 'H');
-  qr.addData(value);
-  try {
-    qr.make();
-  } catch (err) {
-    console.log('Version is low:', version)
-    console.log('Error:', err)
-  }
-  document.getElementById('qr').innerHTML = qr.createImgTag(3);
+const updateDefaultQr = (id) => {
+  let qrTime = genQrSpeed()
+  let mobileInfoLink = document.querySelector('#mobile-info-link')
+  mobileInfoLink.href = `https://www.floridamemory.com/items/show/${id}`
+  setTimeout(() => {
+    makeDefaultQr(id);
+  }, 1000);
+
 }
 
-function makeQArt(value, imagePath) {
+// ------------------------Gen qr with image------------------------------------
+function makeImgQr(value, imagePath) {
   var version = 10;
-  const qrSize = testScreenSize()
+  const imgQrSize = qrsize
   new QArt({
     value: value,
     imagePath: imagePath,
     filter: 'color',
     version: version,
-    size: qrSize,
-    fillType: 'scale_to_fit'
+    size: imgQrSize,
+    fillType: 'fill'
   }).make(document.getElementById('combine'));
 }
 
-// carouselspeed defined globally in script
-const genQrSpeed = () => {
-  let qrTime = 800
-  if (slideOrFade === "fade") {
-    qrTime = 200
-  } else {
-    qrTime = 800
-  }
-  return qrTime
-}
-
-
-
-const updateQr = (item) => {
+const updateImgQr = (item) => {
   let qrTime = genQrSpeed()
 
-  $("#combine").fadeOut(qrTime);
   const id = item.id;
   const qrValue = `https://www.floridamemory.com/items/show/${id}`
   const qrImagePath = item.children[1].src;
   const mobileInfoLink = document.querySelector('#mobile-info-link')
   mobileInfoLink.href = qrValue
   setTimeout(() => {
-    makeQR(qrValue);
-    makeQArt(qrValue, qrImagePath)
-
+    // makeQR(qrValue);
+    makeImgQr(qrValue, qrImagePath)
   }, qrTime);
-  $("#combine").fadeIn(800);
+
 }
+
 
 // function runs on carousel slide change to update qr code to new image
 $('#carouselExampleControls').on('slide.bs.carousel', function onSlide(ev) {
-  const currItem = ev.relatedTarget
-
-  updateQr(currItem)
-  console.log('slide or fade', slideOrFade)
-  console.log('carousel speed', carouselSpeed)
-
+  $(".qr-container").fadeOut(qrTime);
+  if (!qrHasImage) {
+    updateDefaultQr(ev.relatedTarget.id)
+  } else {
+    updateImgQr(ev.relatedTarget)
+  }
+  $(".qr-container").fadeIn(1000);
 });
 
-// set qr code on page load for initial image
+
+// default qr on load
+const carouselItem = document.querySelector('.carousel-item')
+makeDefaultQr(carouselItem.id)
+// image qr on load
 const initialItem = document.querySelector('.active')
-
-updateQr(initialItem)
-
+updateImgQr(initialItem)
 
 
-// fast and fade = 200
+
+
+
+
+
+
+
+
+
+
+
+
+

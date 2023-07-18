@@ -1,3 +1,15 @@
+// music player btn trigger
+const musicToggleBtn = document.querySelector('.toggle-music-player-container .fa-music')
+const musicPlayer = document.querySelector('.music-player')
+musicToggleBtn.addEventListener('click', () =>{
+
+
+  $('.music-player').toggleClass('d-md-none d-flex')
+  musicToggleBtn.classList.toggle('fa-music')
+  musicToggleBtn.classList.toggle('fa-window-close')
+
+})
+
 
 // music player code
 const musicContainer = document.getElementById('music-container');

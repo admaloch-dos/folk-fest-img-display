@@ -10,6 +10,8 @@ modalClose.addEventListener('click', () => {
     carousel.cycle();
 })
 
+// menu input for slider speed
+let carouselSpeed = 6000
 const sliderSpeedInput = document.querySelectorAll('.slider-speed-input')
 // // fast: 3000 medium 6000, slow 12000, extra slow 20000
 // carousel speed is defined globally in script
@@ -32,10 +34,13 @@ sliderSpeedInput.forEach(btn => {
     })
 })
 
+// slider style change on input from fade to slider
 const sliderStyleInput = document.querySelectorAll('.slider-style-input')
 // // fast: 3000 medium 6000, slow 12000, extra slow 20000
 sliderStyleInput.forEach(btn => {
+
     btn.addEventListener('click', () => {
+        let myCarousel = document.querySelector('#carouselExampleControls')
         myCarousel.classList.remove('carousel-fade')
         if (btn.id === 'style2') {
             myCarousel.classList.add('carousel-fade')
@@ -44,5 +49,26 @@ sliderStyleInput.forEach(btn => {
             myCarousel.classList.remove('carousel-fade')
             slideOrFade = "slider"
         }
+    })
+})
+
+// default is normal qr code with image adds image
+const sliderQrInput = document.querySelectorAll('.slider-qr-input')
+sliderQrInput.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+
+        if (btn.id === 'qr1') {
+            document.querySelector('#qr-code').classList.remove('d-none')
+            document.querySelector('#img-qr').classList.add('d-none')
+            qrHasImage = false
+
+        } else {
+            document.querySelector('#qr-code').classList.add('d-none')
+            document.querySelector('#img-qr').classList.remove('d-none')
+            qrHasImage = true
+
+        }
+        console.log(qrHasImage)
     })
 })

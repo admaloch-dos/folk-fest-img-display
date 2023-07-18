@@ -58,32 +58,59 @@
 
 /* carousel controls full screen */
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  width: 2vw;
-  height: 2vw;
-  opacity: .3;
-  transition: all .3s ease-in-out;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
   background-color: transparent;
-  transition: all .1s ease-in-out;
-  font-size: 50px;
-
+  transition: all .3s ease-in-out;
+  cursor: default !important;
+  opacity: 1;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(255, 255, 255, 0.21);
+.icon-container {
+  opacity: 1;
+  background-color: transparent;
+  transition: .2s ease-in-out all;
   cursor: pointer;
+
 }
 
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  opacity: .8;
-}
+
+
+  .carousel-control-next:focus,
+  .carousel-control-next:hover,
+  .carousel-control-prev:focus,
+  .carousel-control-prev:hover {
+    opacity: 1;
+
+  }
+
+  .icon-container span {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: 30px;
+
+    opacity: .5;
+
+  }
+
+  .icon-container span:hover  {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.21);
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .carousel-item {
   transition: transform 1.5s ease-in-out;
@@ -145,6 +172,7 @@
     height: 56vh;
 
   }
+
   .img-container {
 
 

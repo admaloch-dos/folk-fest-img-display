@@ -1,19 +1,69 @@
+/* toggle btn */
+.toggle-music-player-container {
+    background-color: white;
+    opacity: .5;
+    border-radius: 30px;
+    position: absolute;
+    left: 15px;
+    bottom: 45px;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+}
+
+.toggle-music-player-container:hover {
+
+    opacity: 1;
+
+
+}
+
+.toggle-music-player-container i {
+    color: black;
+    padding: 8px;
+    border: white;
+    font-size: 15px;
+}
+
+
+
+/* music player */
 .music-player {
-    opacity: .2;
+
     transition: opacity .3s ease-in-out;
     background-color: #fff;
     border-radius: 15px;
     background-color: #FFFFFF;
     display: flex;
-    padding: 8px 0px;
+    padding: 3px 0px;
     position: relative;
-    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     z-index: 10;
     max-width: 95%;
 }
 
-.music-player:hover {
-    opacity: 1;
+@media (min-width: 768px) {
+    .music-player {
+
+        transition: opacity .3s ease-in-out;
+        background-color: #fff;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        display: none;
+        padding: 8px 0px;
+        position: relative;
+        margin-top: 40px;
+        z-index: 10;
+        max-width: 95%;
+        margin-right: 20px;
+        padding: 8px 20px;
+        position: absolute;
+        bottom: 10px;
+        left: 60px;
+    }
+
+
+
 }
 
 
@@ -100,11 +150,7 @@
         font-size: 21px;
     }
 
-    .music-player {
 
-        padding: 8px 20px;
-
-    }
 
     .music-info {
         padding: 10px 3px;
@@ -122,13 +168,7 @@
         font-size: 21px;
     }
 
-    .music-player {
-        margin-right: 20px;
-        padding: 8px 20px;
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-    }
+
 
     .music-info {
         padding: 5px;
@@ -156,7 +196,7 @@
         padding: 8px 20px;
         position: absolute;
         bottom: 10px;
-        left: 10px;
+        left: 60px;
 
     }
 }
@@ -193,7 +233,7 @@
         padding: 15px 50px;
         position: absolute;
         bottom: 30px;
-        left: 30px;
+        left: 60px;
 
     }
 }
