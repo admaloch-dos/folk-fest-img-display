@@ -21,7 +21,22 @@
     color: black;
     padding: 8px;
     border: white;
-    font-size: 15px;
+    font-size: 1.1rem;
+}
+
+
+@media (min-width: 1200px) {
+    .toggle-music-player-container i {
+
+        font-size: 1.4rem;
+
+    }
+}
+
+@media (min-width: 2500px) {
+    .toggle-music-player-container i {
+        font-size: 2rem;
+    }
 }
 
 

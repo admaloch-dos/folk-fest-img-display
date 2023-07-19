@@ -20,7 +20,7 @@ const updateDefaultQr = (id) => {
   mobileInfoLink.href = `https://www.floridamemory.com/items/show/${id}`
   setTimeout(() => {
     makeDefaultQr(id);
-  }, 1000);
+  }, qrTime);
 
 }
 
@@ -56,13 +56,17 @@ const updateImgQr = (item) => {
 
 // function runs on carousel slide change to update qr code to new image
 $('#carouselExampleControls').on('slide.bs.carousel', function onSlide(ev) {
-  $(".qr-container").fadeOut(qrTime);
-  if (!qrHasImage) {
-    updateDefaultQr(ev.relatedTarget.id)
-  } else {
-    updateImgQr(ev.relatedTarget)
+
+  if(qrGenIsActive) {
+    $(".qr-container").fadeOut(qrTime);
+    if (!qrHasImage) {
+      updateDefaultQr(ev.relatedTarget.id)
+    } else {
+      updateImgQr(ev.relatedTarget)
+    }
+    $(".qr-container").fadeIn(1000);
   }
-  $(".qr-container").fadeIn(1000);
+
 });
 
 

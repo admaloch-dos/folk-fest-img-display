@@ -3,7 +3,13 @@ body {
   background-attachment: fixed;
   background-position: center;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
+}
+
+@media (min-width: 350px) {
+  body {
+    overflow-y: hidden;
+  }
 }
 
 /* footer content */
@@ -19,23 +25,11 @@ body {
   }
 }
 
-.btn-dark,
-.btn-check:focus+.btn-dark,
-.btn-dark:focus,
-.btn-dark:hover,
-.btn-dark:active {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none !important;
-}
 
-.btn-check:active+.btn-dark:focus,
-.btn-check:checked+.btn-dark:focus,
-.btn-dark.active:focus,
-.btn-dark:active:focus,
-.show>.btn-dark.dropdown-toggle:focus {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none !important;
-}
 
+.hide-music {
+  display: none!important;
+}
+.hide-qr {
+  display: none!important;
+}

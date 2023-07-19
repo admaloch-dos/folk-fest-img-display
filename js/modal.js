@@ -1,3 +1,21 @@
+$(document).ready(function () {
+    if ($(window).width() > 349) {
+        setTimeout(() => {
+            $("#settingsModal").modal("show");
+        }, 500);
+    }
+
+
+
+});
+
+
+var myModal = document.getElementById('settingsModal')
+myModal.addEventListener('shown.bs.modal', function () {
+
+    pauseSong();
+})
+
 
 const modalBtn = document.querySelector('#modal-btn')
 modalBtn.addEventListener('click', () => {
@@ -69,6 +87,27 @@ sliderQrInput.forEach(btn => {
             qrHasImage = true
 
         }
-        console.log(qrHasImage)
     })
 })
+
+
+$("#qr-checkbox").on("change", function () {
+    if ($(this).is(':checked')) {
+        $("#qr-container").removeClass("hide-qr");
+        $(".qr-settings label").removeClass("disabled");
+        qrGenIsActive = true
+    } else {
+        $("#qr-container").addClass("hide-qr");
+        $(".qr-settings label").addClass("disabled");
+        qrGenIsActive = false
+    }
+});
+
+$("#music-checkbox").on("change", function () {
+    if ($(this).is(':checked')) {
+        $("#toggle-music, #music-container").removeClass("hide-music");
+    } else {
+        $("#toggle-music, #music-container").addClass("hide-music");
+        pauseSong()
+    }
+});

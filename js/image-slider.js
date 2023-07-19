@@ -1,3 +1,10 @@
+// carousel controls
+let myCarousel = document.querySelector('#carouselExampleControls')
+let carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 20000,
+  keyboard: true
+})
+
 // function to generate random number that doesn't repeat
 let nums = [];
 const genRandNum = (max) => {

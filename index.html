@@ -14,6 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="files/bootstrap.min.css">
+  <link rel="stylesheet" href="files/bootstrap4-toggle.min.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css\image-slider.css" />
@@ -35,13 +36,13 @@
         <i class="fas fa-expand"></i>
       </div>
       <button id="modal-btn" type="button" class="btn btn-dark text-right" data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop">
+        data-bs-target="#settingsModal">
         <i class="fa fa-question-circle" aria-hidden="true"></i>
       </button>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="settingsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="settingsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-sizing">
         <div class="modal-content text-center">
           <!-- <div class="modal-header">
@@ -72,12 +73,26 @@
             <input type="radio" class="btn-check slider-style-input" name="slider-style" id="style2" autocomplete="off">
             <label class="btn btn-light btn-outline-dark slider-style-btns modal-btns" for="style2">Fade</label>
             <div class="qr-settings d-none d-lg-block mt-3">
-              <h3 class=" ">Qr-Code style:</h3>
+              <h3 class=" d-flex justify-content-center">Qr-Code:&nbsp;
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" id="qr-checkbox" checked>
+                </div>
+              </h3>
+
               <input type="radio" class="btn-check slider-qr-input" name="slider-qr" id="qr1" autocomplete="off"
                 checked>
               <label class="btn btn-light btn-outline-dark slider-qr-btns modal-btns" for="qr1">Default</label>
               <input type="radio" class="btn-check slider-qr-input" name="slider-qr" id="qr2" autocomplete="off">
               <label class="btn btn-light btn-outline-dark slider-qr-btns modal-btns" for="qr2">Add Image</label>
+            </div>
+            <div class="music-settings mt-3">
+              <h3 class=" d-flex justify-content-center">Music:&nbsp;
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" id="music-checkbox" checked>
+                </div>
+              </h3>
+
+
             </div>
 
 
@@ -112,7 +127,7 @@
         </button>
       </div>
     </div>
-    <div class="toggle-music-player-container d-none d-md-block">
+    <div id="toggle-music" class="toggle-music-player-container d-none d-md-block">
       <i class="fa-solid fa-music"></i>
     </div>
 
@@ -142,7 +157,7 @@
           </button>
         </div>
       </div>
-      <div class="qr-container  d-none d-md-flex justify-content-center align-items-center  ">
+      <div id="qr-container" class="qr-container  d-none d-md-flex justify-content-center align-items-center  ">
 
 
 
@@ -193,17 +208,20 @@
       </div>
     </div>
 
+
     <script src="./files/qrcode.min.js"></script>
     <script src="./files/qrcode.js"></script>
     <script src="./files/qart.js"></script>
     <script src="./files/jquery-3.7.0.js"></script>
     <script src="./files/bootstrap.bundle.min.js"></script>
+    <script src="./files/bootstrap4-toggle.min.js"></script>
     <script src="./files/jquery.awesome-cursor.min.js"></script>
     <script src="./js/script.js"></script>
 
     <script src="./js/data.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/music-player.js"></script>
+    <script src="./js/modal.js"></script>
+
     <script src="./js/image-slider.js"></script>
     <script src="./js/qr-functions.js"></script>
     <script src="./js/normal-qr.js"></script>

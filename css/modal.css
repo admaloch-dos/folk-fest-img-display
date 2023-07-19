@@ -40,7 +40,7 @@
 
 .header-container i {
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: opacity .2s ease-in-out;
   opacity: .5;
   text-align: right;
@@ -58,10 +58,10 @@
   font-size: 1.2rem;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) {
   .header-container i {
 
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
   }
 }
@@ -69,7 +69,7 @@
 @media (min-width: 1200px) {
   .header-container i {
 
-    font-size: 1.6rem;
+    font-size: 2rem;
 
   }
 }
@@ -99,4 +99,68 @@
   .modal {
     padding: 3em;
   }
+}
+
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #dfe7fd;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 2rem;
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 39px 9px #000000;
+  box-shadow: 0px 0px 39px 9px #000000;
+}
+
+.btn-dark,
+.btn-check:focus+.btn-dark,
+.btn-dark:focus,
+.btn-dark:hover,
+.btn-dark:active {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+.btn-check:active+.btn-dark:focus,
+.btn-check:checked+.btn-dark:focus,
+.btn-dark.active:focus,
+.btn-dark:active:focus,
+.show>.btn-dark.dropdown-toggle:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+.form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.form-check-input:focus {
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 .1rem rgba(0,0,0,.2);
+}
+.form-check-input {
+  width: 10px;
+  height: .8em;
+
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .75rem;
+  border-top: none;
+  border-bottom-right-radius: calc(.3rem - 1px);
+  border-bottom-left-radius: calc(.3rem - 1px);
 }
