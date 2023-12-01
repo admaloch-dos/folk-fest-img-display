@@ -1,11 +1,6 @@
 
 
-// add pause btn on hover over slider -- doesn't work that well.. get rid of it
-$('.carousel-inner')
-  .awesomeCursor('pause', {
-    color: '#FFFFFF',
-    size: 25
-  });
+
 
 
 let slideOrFade = "slider"
