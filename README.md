@@ -1,4 +1,4 @@
-# image-slider
+# folk-fest-img-display
 Florida Folk Festival image display with qr codes and music player.
 
 This image display was created to be showcased at the annual Florida Folk Festival. It contains over 1000 photographs, handpicked by our photo lab staff, and an audio player with music from the Florida Memory audio collection.
