@@ -43,11 +43,7 @@ if ("maxTouchPoints" in navigator) {
   }
 }
 
-if (hasTouchScreen) {
-  console.log('this is a touch screen')
-} else {
-  console.log('this is a desktop')
-}
+
 
 let portrait = window.matchMedia("(orientation: portrait)");
 

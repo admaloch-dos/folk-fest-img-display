@@ -49,6 +49,7 @@ sliderSpeedInput.forEach(btn => {
         }
         const options = carousel._config
         options.interval = carouselSpeed
+        console.log(carouselSpeed)
     })
 })
 

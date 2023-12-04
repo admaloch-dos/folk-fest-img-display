@@ -1,7 +1,7 @@
 // carousel controls
 let myCarousel = document.querySelector('#carouselExampleControls')
 let carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 20000,
+  interval: 6000,
   keyboard: true
 })
 

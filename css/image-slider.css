@@ -105,12 +105,14 @@
   color: black !important;
 }
 
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
 .carousel-control-prev-icon:focus,
 .carousel-control-next-icon:focus {
   border: white solid 2px;
   transition: all .3s ease-in-out;
+
 }
 
 .carousel-control-prev-icon:hover,
