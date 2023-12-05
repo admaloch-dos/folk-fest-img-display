@@ -7,18 +7,21 @@ In addition, QR codes are generated for each image that link to an item page on 
 
 <b>Technologies used:</b><br/>
 --<b>Javascript</b><br/>
---<b>qrcodejs:</b> Plugin to generate QR codes - <a>https://github.com/davidshimjs/qrcodejs</a><br/>
---<b>qart.js:</b> Plugin to insert an image over QR codes <a>https://github.com/kciter/qart.js</a><br/>
+--<b><a href="https://github.com/davidshimjs/qrcodejs">qrcodejs</a>:</b> Plugin to generate QR codes<br/>
+--<b><a href="https://github.com/kciter/qart.js">qart.js</a>:</b> Plugin to insert an image over QR codes<br/>
 --<b>HTML</b><br/>
 --<b>CSS</b><br/>
 --<b>Bootstrap</b><br/>
 
 <b>Takeaways:</b><br/>
-The most challenging part of this project was working with QR codes and figuring out how to load the codes dynamically. Qrcode.js and Qart are not set up by default to do this, so I had to experiment with them to figure out how to make it work. In addition, designing the menu and adding extra controls to customize the Bootstrap slider was a fun little experiment.
+The most challenging aspect of this project involved working with QR codes and determining how to dynamically load them. Qrcode.js and Qart are not configured by default for this task, so I had to experiment with them to find a solution. Additionally, designing the menu and incorporating extra controls to customize the Bootstrap slider was a valuable experience.
 
-<b>Current status:</b><br/>
-The project is complete and was used at the Florida Folk Festival.
+<b>Current Status:</b><br/>
+The project is complete and was successfully utilized at the Florida Folk Festival.
 
 <b>Note:</b><br/>
-<b>Note:</b> Due to server failure issues and a lack of reliable internet at the festival, all images are loaded into the project, and GitHub wouldn't allow such a large number of photos to be uploaded. I've provided a link to Netlify where this is not an issue.
-<b>Note:</b> The Florida Department of State is very security-focused, and version control software is not allowed, so you may not see much of a detailed commit history for this project.
+Due to server failure issues and a lack of reliable internet at the festival, all images are incorporated into the project. GitHub did not allow uploading a large number of photos, so a link to Netlify, where this is not an issue, is provided. 
+
+<b>Note:</b><br/> 
+The Florida Department of State prioritizes security, and version control software is not allowed, limiting the visibility of a detailed commit history for this project.
+
