@@ -272,14 +272,14 @@
 
 @media screen and (min-width:320px) and (orientation:portrait) {
   #img-container {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
 
 @media screen and (min-width:360px) and (orientation:portrait) {
 
   #img-container {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 }
 

@@ -6,7 +6,7 @@ body {
   overflow-y: auto;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 500px) {
   body {
     overflow-y: hidden;
   }
