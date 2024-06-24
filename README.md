@@ -4,7 +4,7 @@
 This image display was created to be showcased at the annual Florida Folk Festival. It contains over 1000 photographs, handpicked by our photo lab staff, data for each image, an audio player, video, and dynamically generated, image-based qr-codes.
 
 <b>Technologies used:</b><br/>
---<b>Javascript</b><br/>
+--<b>JavaScript</b><br/>
 --<b><a href="https://github.com/davidshimjs/qrcodejs">qrcodejs</a>:</b> Plugin to generate QR codes<br/>
 --<b><a href="https://github.com/kciter/qart.js">qart.js</a>:</b> Plugin to insert an image over QR codes<br/>
 --<b>HTML</b><br/>
