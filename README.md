@@ -12,7 +12,7 @@ This image display was created to be showcased at the annual Florida Folk Festiv
 --<b>Bootstrap</b><br/>
 
 <b>Takeaways:</b><br/>
-The most challenging aspect of this project involved working with QR codes and determining how to dynamically load them. Qrcode.js and Qart are not configured by default for this task, so I had to experiment with them to find a solution. Additionally, designing the menu and incorporating extra controls to customize the Bootstrap slider was a valuable experience.
+The most challenging aspect of this project involved working with QR codes and determining how to dynamically load them using available data. Qrcode.js and Qart are not configured by default for this task, so I had to experiment with them to find a solution. Additionally, designing the menu and incorporating extra controls to customize the Bootstrap slider was a valuable experience.
 
 <b>Current Status:</b><br/>
 The project is complete and was successfully utilized at the Florida Folk Festival.
