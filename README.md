@@ -19,9 +19,6 @@ The most challenging aspect of this project involved working with QR codes and d
 <b>Current Status:</b><br/>
 The project is complete and was successfully utilized at the Florida Folk Festival.
 
-<b>Note:</b><br/>
-Due to server failure issues and a lack of reliable internet at the festival, all images are incorporated into the project. GitHub did not allow uploading a large number of photos, so a link to Netlify, where this is not an issue, is provided. 
-
 <b>Note:</b><br/> 
 The Florida Department of State prioritizes security, and version control software is not allowed, limiting the visibility of a detailed commit history for this project.
 
