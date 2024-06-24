@@ -1,9 +1,7 @@
 # Florida Folk Festival image display
 
 <b>About this project:</b><br/>
-This image display was created to be showcased at the annual Florida Folk Festival. It contains over 1000 photographs, handpicked by our photo lab staff, and an audio player with music from the Florida Memory audio collection.
-The project was created with a Bootstrap image carousel but with more customizable features added to allow the user more control over speed, transition effects, etc.
-In addition, QR codes are generated for each image that link to an item page on the Florida Memory website. The user can select between a regular QR code and a code with the current image embedded.
+This image display was created to be showcased at the annual Florida Folk Festival. It contains over 1000 photographs, handpicked by our photo lab staff, data for each image, an audio player, video, and dynamically generated, image-based qr-codes.
 
 <b>Technologies used:</b><br/>
 --<b>Javascript</b><br/>
