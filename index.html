@@ -66,9 +66,9 @@
                 </div>
               </h3>
               <input type="radio" class="btn-check slider-qr-input" name="slider-qr" id="qr1" autocomplete="off"
-                checked>
+                >
               <label class="btn btn-light btn-outline-dark slider-qr-btns modal-btns" for="qr1">Default</label>
-              <input type="radio" class="btn-check slider-qr-input" name="slider-qr" id="qr2" autocomplete="off">
+              <input type="radio" class="btn-check slider-qr-input" name="slider-qr" id="qr2" autocomplete="off" checked>
               <label class="btn btn-light btn-outline-dark slider-qr-btns modal-btns" for="qr2">Add Image</label>
             </div>
             <div class="music-settings mt-3">
@@ -110,9 +110,10 @@
     <div id="toggle-music" class="toggle-music-player-container d-none d-md-block">
       <i class="fa-solid fa-music"></i>
     </div>
-    <!-- music player -->
+ 
     <div
       class="footer-content d-flex flex-column flex-md-row justify-content-between justify-content-lg-between align-items-center">
+        <!-- music player -->
       <div class="music-player d-md-none" id="music-container">
         <div class="music-info text-center d-none d-md-block">
           <h4 id="title"></h4>
@@ -133,6 +134,7 @@
           </button>
         </div>
       </div>
+      <!-- qr codes-->
       <div id="qr-container" class="qr-container  d-none d-md-flex justify-content-center align-items-center  ">
         <p class="mb-0 d-none d-md-block text-center">Scan to learn more at Florida Memory</p>
         <div class="mb-4 mt-3 " id="qr-code"></div>

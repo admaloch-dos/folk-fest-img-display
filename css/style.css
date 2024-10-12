@@ -100,7 +100,7 @@ video {
 }
 @media screen and (min-width: 1900px) {
   :root {
-    --video-width: 67%;
+    --video-width: 60%;
   }
   .video-margin {
     margin-top: 0%;
@@ -119,7 +119,7 @@ video {
     margin-top: 0%;
   }
   :root {
-    --video-width:60%;
+    --video-width:55%;
   }
   video {
     position: relative;

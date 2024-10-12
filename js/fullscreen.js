@@ -1,10 +1,6 @@
 const showFullScreen = () => {
     const footer = document.querySelector(".footer-content");
-    if (window.innerWidth > 1200) {
-        footer.classList.remove('d-none')
-    } else {
-        footer.classList.add('d-none')
-    }
+  
     const fullScreenElement = document.getElementById("main-container");
     // console.log(fullScreenElement)
     if (document.fullscreenElement) {

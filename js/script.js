@@ -103,24 +103,9 @@ const testScreenSize = () => {
 }
 // initial qr on page load
 let qrsize = testScreenSize()
-// window.onresize = function () {
 
-//   setTimeout(function () {
-//     doesQrShow()
-//     let prevSize = qrsize
-//     qrsize = testScreenSize()
-//     console.log('prevsize is', prevSize)
+setTimeout(() => {
+  const imgQrTrigger = document.querySelector('#qr2')
 
-//     // window.location.reload(); //this function will play after 5000 milliseconds
-//     if (qrsize !== prevSize) {
-//       prevSize = qrsize
-//       carousel.next();
-//     }
-//   }, 1300);
-// }
-
-
-// setTimeout(() => {
-//   const carouselItems = document.querySelectorAll('.carousel-item')
-//   console.log(carouselItems.length)
-// }, 5000);
+imgQrTrigger.click()
+}, 500);
