@@ -5,17 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
   <link rel="stylesheet" href="./files/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="files/bootstrap.min.css">
-  <link rel="stylesheet" href="files/bootstrap4-toggle.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/modal.css" />
-  <link rel="stylesheet" href="css\image-slider.css" />
-  <link rel="stylesheet" href="css/music-player.css" />
-  <link rel="stylesheet" href="css/qr-code.css" />
+  <link rel="stylesheet" href="./files/bootstrap.min.css">
+  <link rel="stylesheet" href="./files/bootstrap4-toggle.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/modal.css" />
+  <link rel="stylesheet" href="./css\image-slider.css" />
+  <link rel="stylesheet" href="./css/music-player.css" />
+  <link rel="stylesheet" href="./css/qr-code.css" />
   <title>Folklife Audio Player</title>
 </head>
 
@@ -36,7 +37,7 @@
       aria-labelledby="settingsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-sizing">
         <div class="modal-content text-center">
-          <div class="modal-body">
+          <div class="modal-body pb-0">
             <h2>Settings:</h2>
             <h3>Slideshow speed:</h3>
             <input type="radio" class="btn-check slider-speed-input" name="slider-speed" id="speed1" autocomplete="off">
@@ -58,7 +59,7 @@
             <label class="btn btn-light btn-outline-dark slider-style-btns modal-btns" for="style1">Slider</label>
             <input type="radio" class="btn-check slider-style-input" name="slider-style" id="style2" autocomplete="off">
             <label class="btn btn-light btn-outline-dark slider-style-btns modal-btns" for="style2">Fade</label>
-            <div class="qr-settings d-none d-lg-block mt-3">
+            <div class="qr-settings d-lg-block mt-3">
               <h3 class=" d-flex justify-content-center">Qr-Code:&nbsp;
                 <div class="form-check form-switch ">
                   <input class="form-check-input" type="checkbox" id="qr-checkbox" checked>
@@ -78,9 +79,9 @@
               </h3>
             </div>
           </div>
-          <div class="modal-footer d-flex justify-content-center mb-0">
+          <div class="modal-footer d-flex justify-content-center pt-0 mb-2">
             <button id="modal-close" type="button" class="btn btn-light btn-outline-dark"
-              data-bs-dismiss="modal">Close</button>
+              data-bs-dismiss="modal">Play Slider</button>
           </div>
         </div>
       </div>
@@ -143,19 +144,38 @@
         <a id="mobile-info-link" href="">Visit item page to learn more</a>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageErrorModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="imageErrorModalLabel" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered modal-sizing">
+      <div class="p-3 modal-content text-center">
+        <div class="modal-body">
+          <div><i class="fa-regular fa-face-frown fa-3x mb-1"></i></div>
+          <h3>No images found.</h3>
+          <h4>Add images to the "Add Images" folder and double click "Run Slideshow"</h4>
+      </div>
+    </div>
   </div>
 
-  <script src="./files/qrcode.min.js"></script>
-  <script src="./files/qrcode.js"></script>
-  <script src="./files/qart.js"></script>
+  </div>
+
+
+
   <script src="./files/jquery-3.7.0.js"></script>
   <script src="./files/bootstrap.bundle.min.js"></script>
   <script src="./files/bootstrap4-toggle.min.js"></script>
+  <script src="./files/qrcode.min.js"></script>
+  <script src="./files/qart.js"></script>
+  <script src="./js/allFolkImgData.js"></script>
+  <script src="./js/currImgArr.js"></script>
+  <script src="./js/currAudioArr.js"></script>
+  <script src="./js/currVidArr.js"></script>
   <script src="./js/script.js"></script>
-  <script src="./js/data.js"></script>
   <script src="./js/music-player.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/image-slider.js"></script>
+  <script src="./js/video-slider.js"></script>
   <script src="./js/qr-functions.js"></script>
   <script src="./js/normal-qr.js"></script>
   <script src="./js/fullscreen.js"></script>

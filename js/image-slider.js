@@ -1,85 +1,97 @@
-// carousel controls
-let myCarousel = document.querySelector('#carouselExampleControls')
-let carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 6000,
-  keyboard: true
-})
 
-// function to generate random number that doesn't repeat
-let nums = [];
-const genRandNum = (max) => {
-  let rand = (Math.random() * max).toFixed();
-  rand = Number(rand);
-  if (!nums.includes(rand)) {
-    nums.push(rand);
-    return rand;
-  } else {
-    if (nums.length < max) {
-      return genRandNum(max);
-    } else {
-      return false;
-    }
-  }
-}
 
-const getRandImage = () => {
-  let randIndex = genRandNum(images.length - 1)
-  let randImage = images[randIndex]
-  return randImage
-}
 
-const yearOrDate = (currentDate) => {
+
+
+const testYearOrDate = (currentDate) => {
   const month = ["January", "February", "March", "April", "May", "June", "July",
-      "August", "September", "October", "November", "December"];
+    "August", "September", "October", "November", "December"];
   let currDate = currentDate + ""
   let yearOrDate = 'Year'
+  // console.log(currDate)
   for (let i = 0; i <= month.length; i++) {
-      if (currDate.includes(month[i])) {
-          yearOrDate = 'Date'
-      }
+    if (currDate.includes(month[i])) {
+      yearOrDate = 'Date'
+    }
   }
   return yearOrDate
 }
 
-// ${randImage.year && `<h4 class="item-year">Year: ${randImage.year}</h4>` }
-const createCarouselItem = (randImage) => {
-  const doesContainYear = /\d{4}/.test(randImage.description);
-  if (doesContainYear && typeof randImage.year === 'number') {
-    randImage.year = ""
+const formatDate = (inputDate) => {
+  const dateObj = new Date(inputDate);
+  const formattedDate = dateObj.toLocaleDateString("en-US", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  });
+  return formattedDate;
+}
+
+const createCarouselItem = (image) => {
+  const doesContainYear = /\d{4}/.test(image.description);
+  if (doesContainYear && typeof image.year === 'number') {
+    image.year = ""
   }
-  const dateOrYear = yearOrDate(randImage.year)
+  const dateOrYear = testYearOrDate(image.year)
+  const formattedYear = dateOrYear === 'Date' ? formatDate(image.year) : image.year
   const newItem = document.createElement('div')
-  newItem.id = randImage.id
+  newItem.id = image.file
   newItem.classList.add('carousel-item')
   newItem.innerHTML = `
     <div class="item-info">
-      <h3>${randImage.description}</h3>
-
-      ${randImage.year ? `<h4 class="item-year">${dateOrYear}: ${randImage.year}</h4>` : `<div class = "space-div"></div>`}
-
-
+      <h3>${image.description}</h3>
+      ${formattedYear ? `<h4 class="item-year">${dateOrYear}: ${formattedYear}</h4>` : `<div class = "space-div"></div>`}
     </div>
-    <img src="img/${randImage.file}.JPG" class="slider-img d-block mx-auto">
+    <img src="img/${image.file}.JPG" class="slider-img d-block mx-auto">
   `
-  const itemYear = document.querySelector('.item-year')
-
   return newItem
 }
 
-// populate carousel with images from img directory
-const carouselInner = document.querySelector('.carousel-inner')
-for (let i = 0; i < images.length - 1; i++) {
-  let randImage = getRandImage()
-  const newItem = createCarouselItem(randImage)
-  carouselInner.append(newItem)
+
+
+
+const addSliderItems = () => {
+  let failedImgArr = []
+  if (filteredImgArr.length < 2 || typeof filteredImgArr === 'undefined') {
+    //check to see if there are images
+    const myModal = new bootstrap.Modal(document.getElementById('imageErrorModal'));
+    myModal.show();
+  } else {
+    // populate carousel with images from img directory
+    let shuffledImages = shuffle(filteredImgArr)
+
+    for (let image of shuffledImages) {
+      const upperCaseImg = image.toUpperCase()
+      const lowerCaseImg = image.toLowerCase()
+      if (image) {
+        if (allFolkImgData[upperCaseImg] !== undefined) {
+          newItem = createCarouselItem(allFolkImgData[upperCaseImg])
+          document.querySelector('.carousel-inner').append(newItem)
+
+        } else if (allFolkImgData[lowerCaseImg]) {
+          newItem = createCarouselItem(allFolkImgData[lowerCaseImg])
+          document.querySelector('.carousel-inner').append(newItem)
+
+        } else {
+          failedImgArr.push(image)
+
+
+        }
+      }
+    }
+    document.querySelector('.carousel-item').classList.add('active')
+  }
+  const carouselItems = document.querySelectorAll('.carousel-item')
+
+
 }
-
-const firstItem = document.querySelector('.carousel-item').classList.add('active')
-
+addSliderItems()
 
 
 
 
+
+// issues Bill Monroe performing at the Florida Folk Festival - White Springs, Florida .
 
 
 

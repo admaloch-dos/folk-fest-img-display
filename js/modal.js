@@ -1,31 +1,42 @@
-$(document).ready(function () {
-    if ($(window).width() > 349) {
+
+
+const settingsModal = new bootstrap.Modal(document.getElementById('settingsModal'));
+
+const showModalOnLoad = () => {
+    if (filteredImgArr.length > 2 && typeof filteredImgArr !== 'undefined') {
         setTimeout(() => {
-            $("#settingsModal").modal("show");
-        }, 500);
+            carousel.pause();
+            settingsModal.show();
+        }, 800);
     }
+}
+
+showModalOnLoad()
 
 
 
-});
 
 
-var myModal = document.getElementById('settingsModal')
-myModal.addEventListener('shown.bs.modal', function () {
-
-    pauseSong();
-})
+// document.getElementById('settingsModal').addEventListener('shown.bs.modal', function () {
+//     pauseSong();
+// })
 
 
 const modalBtn = document.querySelector('#modal-btn')
 modalBtn.addEventListener('click', () => {
+    console.log('carousel paused')
     carousel.pause();
 })
+
+let initialPageLoad = true
 
 const modalClose = document.querySelector('#modal-close')
 modalClose.addEventListener('click', () => {
     carousel.next();
     carousel.cycle();
+    if (initialPageLoad) showFullScreen()
+    initialPageLoad = false
+
 })
 
 // menu input for slider speed
@@ -49,7 +60,6 @@ sliderSpeedInput.forEach(btn => {
         }
         const options = carousel._config
         options.interval = carouselSpeed
-        console.log(carouselSpeed)
     })
 })
 

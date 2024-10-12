@@ -4,7 +4,9 @@
 
 }
 
-
+#full-screen, #modal-btn {
+z-index: 100;
+}
 
 
 .qr-container p {
@@ -42,6 +44,11 @@
 
 }
 
+canvas {
+    width: 200px;
+    height: 200px;
+}
+
 @media (min-width: 600px) {
     #mobile-info-link {
         font-size: .9rem;
@@ -62,6 +69,11 @@
         right: 60px;
         bottom: -10px
     }
+    canvas {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 1rem;
+    }
 }
 @media (min-width: 1500px) {
     .qr-container {
@@ -71,6 +83,11 @@
 @media (min-width: 1700px) {
     .qr-container {
         right: 30px
+    }
+    canvas {
+        width: 250px;
+        height: 250px;
+        margin-top: .75rem;
     }
 }
 @media (min-width: 1900px) {
@@ -85,3 +102,11 @@
         bottom: 20;
     }
 }
+
+/* #img-qr {
+    position: relative;
+    bottom: 1rem!important;
+    margin-top: 1.3rem;
+
+} */
+

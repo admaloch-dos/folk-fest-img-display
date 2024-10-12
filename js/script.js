@@ -1,7 +1,18 @@
 
+let filteredImgArr = currImgArr.filter(img => img)
+// console.log(filteredImgArr)
 
+// carousel controls
+let myCarousel = document.querySelector('#carouselExampleControls')
+let carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 6000,
+  keyboard: true
+})
 
-
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+  return array;
+}
 
 let slideOrFade = "slider"
 let qrHasImage = false
@@ -56,7 +67,6 @@ const doesQrShow = () => {
   } else {
     qrGenIsActive = true
   }
-  console.log('qrgenisactive is', qrGenIsActive)
 }
 doesQrShow()
 
@@ -80,34 +90,37 @@ const testScreenSize = () => {
 
     $('.qr-settings').show();
     if (window.innerWidth > 768 && window.innerWidth < 997) {
-      updatedQr = 175
+      updatedQr = 150
     } if (window.innerWidth > 997 && window.innerWidth < 1500) {
-      updatedQr = 250
+      updatedQr = 190
     } if (window.innerWidth > 1500 && window.innerWidth < 2000) {
-      updatedQr = 275
+      updatedQr = 205
     } if (window.innerWidth > 2000) {
-      updatedQr = 300
+      updatedQr = 230
     }
   }
   return updatedQr
 }
 // initial qr on page load
 let qrsize = testScreenSize()
-console.log('qrsize is', qrsize)
-window.onresize = function () {
+// window.onresize = function () {
 
-  setTimeout(function () {
-    doesQrShow()
-    let prevSize = qrsize
-    qrsize = testScreenSize()
-    console.log('prevsize is', prevSize)
+//   setTimeout(function () {
+//     doesQrShow()
+//     let prevSize = qrsize
+//     qrsize = testScreenSize()
+//     console.log('prevsize is', prevSize)
 
-    // window.location.reload(); //this function will play after 5000 milliseconds
-    if (qrsize !== prevSize) {
-      console.log('screen change occured that isnt prev size... should change')
-      prevSize = qrsize
-      carousel.next();
-    }
-  }, 1300);
-}
+//     // window.location.reload(); //this function will play after 5000 milliseconds
+//     if (qrsize !== prevSize) {
+//       prevSize = qrsize
+//       carousel.next();
+//     }
+//   }, 1300);
+// }
 
+
+// setTimeout(() => {
+//   const carouselItems = document.querySelectorAll('.carousel-item')
+//   console.log(carouselItems.length)
+// }, 5000);

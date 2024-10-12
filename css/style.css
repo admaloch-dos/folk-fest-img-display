@@ -6,9 +6,15 @@ body {
   overflow-y: auto;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   body {
     overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-device-width: 950px) and (max-device-height: 500px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
   }
 }
 
@@ -28,8 +34,96 @@ body {
 
 
 .hide-music {
-  display: none!important;
+  display: none !important;
 }
+
 .hide-qr {
-  display: none!important;
+  display: none !important;
+}
+
+#qr-code img {
+  border: white solid 5px;
+  border-radius: 10px;
+}
+
+#img-qr canvas {
+  border: white solid 1px;
+  border-radius: 10px;
+}
+
+
+
+:root {
+  --video-width: 100%;
+}
+
+video {
+  width: var(--video-width);
+}
+
+.video-margin {
+  margin-top: 40%;
+}
+
+@media screen and (min-width: 600px) {
+  .video-margin {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 962px) {
+  .video-margin {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --video-width:60%;
+  }
+  .video-margin {
+    margin-top: 0%;
+  }
+
+  video {
+    position: relative;
+    left: calc((100% - var(--video-width)) / 2);
+
+  }
+}
+@media screen and (min-width: 1500px) {
+  :root {
+    --video-width: 75%;
+  }
+  .video-margin {
+    margin-top: 0%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  :root {
+    --video-width: 67%;
+  }
+  .video-margin {
+    margin-top: 0%;
+  }
+
+}
+@media screen and (min-width: 2200px) {
+
+  .video-margin {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (max-device-width: 950px) and (max-device-height: 500px) and (orientation: landscape) {
+  .video-margin {
+    margin-top: 0%;
+  }
+  :root {
+    --video-width:60%;
+  }
+  video {
+    position: relative;
+    left: calc((100% - var(--video-width)) / 2);
+
+  }
 }

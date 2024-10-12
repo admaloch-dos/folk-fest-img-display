@@ -1,4 +1,4 @@
-const newData = {
+const allFolkImgData = {
     "FS851108": {
         "id": 121622,
         "file": "FS851108",
@@ -9813,7 +9813,7 @@ const newData = {
         "id": 109591,
         "file": "FA3664",
         "description": "White Springs Choraleers performing at the 1957 Florida Folk Festival - White Springs, Florida",
-        "year": "5-May-57"
+        "year": "05-May-57"
     },
     "FA4587": {
         "id": 110479,
@@ -10251,7 +10251,7 @@ const newData = {
         "id": 109658,
         "file": "FA3715",
         "description": "Scottish dancers from Jacksonville performing at the Florida Folk Festival - White Springs, Florida",
-        "year": "6-May-60"
+        "year": "06-May-60"
     },
     "FA4776": {
         "id": 110653,
@@ -10383,7 +10383,7 @@ const newData = {
         "id": 109862,
         "file": "FA3942",
         "description": "Vietnamese folk singer Pham Duy performing at the 1966 Florida Folk Festival - White Springs, Florida",
-        "year": "6-May-66"
+        "year": "06-May-66"
     },
     "FA4448": {
         "id": 110342,

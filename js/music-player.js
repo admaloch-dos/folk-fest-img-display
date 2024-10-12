@@ -1,7 +1,7 @@
 // music player btn trigger
 const musicToggleBtn = document.querySelector('.toggle-music-player-container .fa-music')
 const musicPlayer = document.querySelector('.music-player')
-musicToggleBtn.addEventListener('click', () =>{
+musicToggleBtn.addEventListener('click', () => {
 
 
   $('.music-player').toggleClass('d-md-none d-flex')
@@ -24,19 +24,25 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
-// / add array of song titles
-//titles must be identical to file names from music directory
-const songs = ["1. What is Folklife", "2. Black Mountain Rag", "3. Alma Corazon Y Vida", "4. Shove it Over", "5. Orange Blossom Special", "6. Old County Church", "7. Somethings Got a Hold of Me", "8. Welcome to Rainbow Springs", "9. La Viya", "10. Understanding Folklife", "11. Camilia La Tejana", "12. Arkansas Traveler", "13. That Old Time Religion", "14. Just Got Married", "15. Sissy In the Barn", "16. Alligator Dance", "17. I'm Going to Die With the Staff in My Hand", "18. El Gavilan Cjaropo", "19. That's Alright", "20. Which Way Did My Baby Go", "21. Where Could I Go But To The Lord", "22. Devil's Dream", "23. Give a Poor Dog a Bone", "24. Somewhere to Lay My Head", "25. I believe", "26. Butter Beans", "27. Chu Shui Lian", "28. The Cuckoo", "29. One Dime Blues", "30. Qua Cãu Gió Bay", "31. The Water is Wide", "32. Kimble's Rachel", "33. Gonna Paint the Town", "34. Kind Hearted Woman Blues", "35. The Cruel Weather", "36. Back in the Saddle Again", "37. Lord Wellington's Reel", "38. Nottamun Town", "39. Until I Found the Lord", "40. The Wayfaring Stranger"]
+// const filteredAudioArr = currAudioArr.filter(song => song)
+const filteredAudioArr = shuffle(currAudioArr.filter(song => song))
 
+
+console.log(filteredAudioArr)
 // Keep track of song
 let songIndex = 0;
 
 // Initially load song details into DOM
-loadSong(songs[songIndex]);
+loadSong(filteredAudioArr[songIndex]);
 
 // Update song details
 function loadSong(song) {
-  title.innerText = song;
+  let songTitle = song;
+  if (song.indexOf('.')) {
+    const index = song.indexOf('.') + 1;
+    songTitle = song.slice(index).trim()
+  }
+  title.innerText = songTitle;
   audio.src = `music/${song}.mp3`;
 
 }
@@ -64,10 +70,10 @@ function prevSong() {
   songIndex--;
 
   if (songIndex < 0) {
-    songIndex = songs.length - 1;
+    songIndex = filteredAudioArr.length - 1;
   }
 
-  loadSong(songs[songIndex]);
+  loadSong(filteredAudioArr[songIndex]);
 
   playSong();
 }
@@ -76,11 +82,11 @@ function prevSong() {
 function nextSong() {
   songIndex++;
 
-  if (songIndex > songs.length - 1) {
+  if (songIndex > filteredAudioArr.length - 1) {
     songIndex = 0;
   }
 
-  loadSong(songs[songIndex]);
+  loadSong(filteredAudioArr[songIndex]);
 
   playSong();
 }
